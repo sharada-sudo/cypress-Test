@@ -1,7 +1,8 @@
 describe('Visit the landingpage', function () {
 
     it('it visits the URL', function () {
-        cy.visit("/");
+        cy.visit("/")
+        cy.contains('Login with Google').should('be.visible')
 
     })
 
